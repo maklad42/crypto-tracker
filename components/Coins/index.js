@@ -12,8 +12,8 @@ export const Coins = ({
   priceChange,
 }) => {
   return (
-    <Link href="/coin/[id]" as={'/coin/${id}'}>
-      <div className={styles.coin.container}>
+    <Link href="/coin/{id}" as={`/coin/${id}`} passHref>
+      <div className={styles.coin_container}>
         <div className={styles.coin_row}>
           <div className={styles.coin}>
             <img src={image} alt={name} className={styles.coin_img} />
